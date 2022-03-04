@@ -1,0 +1,65 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="calc.css">
+        <title>電卓</title>
+      </head>
+ 
+      <body>
+      
+      <div class = "calculator"> 
+      <table class="number">
+       
+      <tr>
+     	<td colspan = "4" id="result" style ="width:216px;height:27px;" >0</td>
+      </tr>
+			  
+			 <tr>   
+			  <td><input class = "button" type = "button" value = "7" onclick = "clickbutton(this.value)"></td>
+				<td><input class = "button" type = "button" value = "8" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button" type = "button" value = "9" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button2" type = "button" value = "+" onclick = "clickbutton(this.value)" ></td>
+			</tr>
+			
+			<tr>
+				<td><input class = "button" type = "button" value = "4" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button" type = "button" value = "5" onclick = "clickbutton(this.value)"></td>
+				<td><input class = "button" type = "button" value = "6" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button2" type = "button" value = "-" onclick = "clickbutton(this.value)" ></td>
+			</tr>
+			
+			 <tr>
+			  <td><input class = "button" type = "button" value = "1" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button" type = "button" value = "2" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button" type = "button" value = "3" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button2" type = "button" value = "*" onclick = "clickbutton(this.value)" ></td>
+			</tr>
+			
+			<tr>
+			  <td><input class = "button" type = "button" value = "0" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button00 " type = "button" value = "00" onclick = "clickbutton(this.value)" ></td>
+				<td><input class = "button2 " type = "button" value = "." onclick = "clickdot()" ></td>
+				<td><input class = "button2 " type = "button" value = "/" onclick = "clickbutton(this.value)" ></td>
+			</tr>
+      
+      <tr>
+      <td colspan="2"><input class = "buttonAC" type = "button" value = "AC" onclick = "clearScreen()" ></td>
+      <td colspan="2"><input class = "button" type = "button" value = "=" onclick = "calculate()" ></td>
+      </tr>
+      
+    
+      
+      </table>
+      
+      </div>
+      
+      
+      
+      <script type="text/javascript" src="calc.js" charset="utf-8"></script> 
+      
+      </body>
+    </html>
+    
+      
